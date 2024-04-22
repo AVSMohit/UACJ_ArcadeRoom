@@ -1912,7 +1912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivityX: 30
-  sensitivityY: 0.5
+  sensitivityY: 0.15
   playerCamera: {fileID: 963194228}
   xClamp: 85
 --- !u!114 &2008487826
@@ -1928,7 +1928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2008487827}
-  speed: 11
+  speed: 4
 --- !u!143 &2008487827
 CharacterController:
   m_ObjectHideFlags: 0
