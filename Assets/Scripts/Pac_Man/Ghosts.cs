@@ -5,7 +5,6 @@ public class Ghosts : MonoBehaviour
 {
 
     public GenericMovement genericMovement {  get; private set; }
-
     public GhostsHome home { get; private set; }
     public GhostsScatter scatter { get; private set; }
     public GhostsChase chase { get; private set; }

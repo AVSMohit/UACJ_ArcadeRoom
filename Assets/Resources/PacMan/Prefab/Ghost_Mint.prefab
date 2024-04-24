@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: e4842b398d56f3546b5b1e4261796999, type: 3}
     - target: {fileID: 2734633433037312280, guid: bd46bf4608bd44242ac17f448369cffa, type: 3}
       propertyPath: initialDirection.y
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2965609076916593145, guid: bd46bf4608bd44242ac17f448369cffa, type: 3}
       propertyPath: m_Sprite
@@ -103,7 +103,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2184169418199207121, guid: bd46bf4608bd44242ac17f448369cffa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6361883794808601009}
   m_SourcePrefab: {fileID: 100100000, guid: bd46bf4608bd44242ac17f448369cffa, type: 3}
 --- !u!114 &1170982918337310158 stripped
 MonoBehaviour:
@@ -116,3 +119,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f774ad29ce3cd484f8c0fa267ce33456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2757791021162768348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2184169418199207121, guid: bd46bf4608bd44242ac17f448369cffa, type: 3}
+  m_PrefabInstance: {fileID: 4038073903051057933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6361883794808601009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757791021162768348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc07092214b67e4cbe70d5eb2202463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: f5059b183a2ea8d4abfea077d9b3839a, type: 3}
+  - {fileID: 21300000, guid: 841fbf4c6082e72499039a546550e4e1, type: 3}
+  - {fileID: 21300000, guid: e676dabb71e58ef438c304109d33999e, type: 3}
+  - {fileID: 21300000, guid: cfa3cb939cc79094d8b919e0f38f7cab, type: 3}
+  animationTime: 0.25
+  loop: 1
