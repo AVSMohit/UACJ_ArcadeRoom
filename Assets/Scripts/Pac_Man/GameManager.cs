@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int score { get; private set; }
     public int lives { get; private set; }
 
+    public GameObject gameOverPanel;
 
     public int ghostMultiplier { get; private set; } = 1;
     private void Start()
@@ -45,10 +46,10 @@ public class GameManager : MonoBehaviour
         ResetGhostMutliplier();
         for (int i = 0; i < this.ghosts.Length; i++)
         {
-            this.ghosts[i].gameObject.SetActive(true);
+            this.ghosts[i].ResetState();
         }
 
-        this.pacMan.gameObject.SetActive(true);
+        this.pacMan.ResetState();
     }
 
     void GameOver()
