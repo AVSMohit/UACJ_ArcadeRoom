@@ -59,7 +59,7 @@ public class DinoGameManager : MonoBehaviour
     }
     private void Update()
     {
-        if (!GameOver)
+        if (!gameOver)
         {
             gameSpeed += gameSpeedIncreas * Time.deltaTime;
             score += gameSpeed * Time.deltaTime;
