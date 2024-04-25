@@ -55,8 +55,8 @@ public class DinoGameManager : MonoBehaviour
         spawner = FindObjectOfType<Spawner>();
         GameOverText.gameObject.SetActive(false);
         StartGameText.gameObject.SetActive(true);
-        //gameSpeed = initialGameSpeed;
-        // NewGame();
+        gameSpeed = initialGameSpeed;
+       // NewGame();
 
     }
     private void Update()

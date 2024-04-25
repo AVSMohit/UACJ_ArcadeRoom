@@ -385,7 +385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -156.5, y: -25}
+  m_AnchoredPosition: {x: -156, y: -25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &304248885
@@ -1878,7 +1878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -231.4, y: -25}
+  m_AnchoredPosition: {x: -231, y: -25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1275308767
@@ -2389,8 +2389,8 @@ Transform:
   - {fileID: 1071003970}
   - {fileID: 1947615301}
   - {fileID: 885888578}
-  - {fileID: 892799569}
   - {fileID: 774677756}
+  - {fileID: 892799569}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2511,6 +2511,8 @@ MonoBehaviour:
   - prefab: {fileID: 5343817938319992046, guid: e75a7ede16f8dbf49a27889a68364e8c, type: 3}
     spawnChance: 0.3
   - prefab: {fileID: 8937837896026180929, guid: b336f405ccc23bb4a880f9b58f6e92ee, type: 3}
+    spawnChance: 0.2
+  - prefab: {fileID: 3038729593326543706, guid: ff7e9ae7465192d41a5ac3d7207809cd, type: 3}
     spawnChance: 0.2
   minSpawnRate: 1
   maxSpawnRate: 2

@@ -8,6 +8,10 @@ public class Movement : MonoBehaviour
     [SerializeField] float speed = 11;
     Vector2 horizontalInput;
 
+    private void Start()
+    {
+        Time.fixedDeltaTime = default;
+    }
     private void Update()
     {
         Vector3 horizontalVelocity = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * speed;
