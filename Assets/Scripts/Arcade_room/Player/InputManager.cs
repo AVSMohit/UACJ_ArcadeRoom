@@ -44,5 +44,9 @@ public class InputManager : MonoBehaviour
     {
         movement.RecieveInput(horizontalMovement);
         mouseLook.RecieveInput(mouseInput);
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }

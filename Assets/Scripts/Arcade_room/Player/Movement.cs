@@ -7,13 +7,16 @@ public class Movement : MonoBehaviour
     [SerializeField] CharacterController controller;
     [SerializeField] float speed = 11;
     Vector2 horizontalInput;
+    public static Vector3 preiousPosition ;
 
     private void Start()
     {
         Time.fixedDeltaTime = 0.02f;
+        transform.position = preiousPosition;
     }
     private void Update()
     {
+        preiousPosition = transform.position;
         Vector3 horizontalVelocity = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * speed;
         controller.Move(horizontalVelocity * Time.deltaTime);
     }

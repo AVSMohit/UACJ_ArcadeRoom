@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/ArcadeRoom_Prototyping.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 97e4f2e341a990c409ac6dcc4be4cb25
+    path: Assets/Scenes/Dino_Run.unity
+    guid: c0bfd131fad7a2e4f8ad387074050220
+  - enabled: 1
+    path: Assets/Scenes/Pac_Man.unity
+    guid: 9d235cc04d1394a4b961280e5ddc15c1
+  - enabled: 1
+    path: Assets/Scenes/Snake.unity
+    guid: bb6302f84ff41b74fb8b7d96a8c45026
+  - enabled: 1
+    path: Assets/Scenes/Space_Invader.unity
+    guid: be2895bc3a8ece3479b2d21d5e246002
   m_configObjects: {}
