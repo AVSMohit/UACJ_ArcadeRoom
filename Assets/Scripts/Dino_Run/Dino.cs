@@ -36,4 +36,11 @@ public class Dino : MonoBehaviour
         characterController.Move(direction * Time.deltaTime);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
+            DinoGameManager.instance.GameOver();
+        }
+    }
 }

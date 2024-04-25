@@ -14,8 +14,8 @@ public class Spawner : MonoBehaviour
     
     public SpawnableObject[] obstacles;
 
-    public float minSpawnRate = 0f;
-    public float maxSpawnRate = 1f;
+    public float minSpawnRate = 1f;
+    public float maxSpawnRate = 2f;
 
     private void OnEnable()
     {
