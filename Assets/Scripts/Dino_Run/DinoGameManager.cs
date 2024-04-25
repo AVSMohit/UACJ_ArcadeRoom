@@ -38,6 +38,7 @@ public class DinoGameManager : MonoBehaviour
         {
             DestroyImmediate(gameObject);
         }
+
     }
     // Start is called before the first frame update
     private void OnDestroy()
@@ -54,25 +55,31 @@ public class DinoGameManager : MonoBehaviour
         spawner = FindObjectOfType<Spawner>();
         GameOverText.gameObject.SetActive(false);
         StartGameText.gameObject.SetActive(true);
-       // NewGame();
+        //gameSpeed = initialGameSpeed;
+        // NewGame();
 
     }
     private void Update()
     {
+       
+            gameSpeed += gameSpeedIncreas * Time.deltaTime;
+
         if (!gameOver)
         {
-            gameSpeed += gameSpeedIncreas * Time.deltaTime;
+
             score += gameSpeed * Time.deltaTime;
             ScoreText.text = Mathf.FloorToInt(score).ToString("D5");
-
         }
+      
+
+        
         if(Input.GetKeyDown(KeyCode.R) && gameOver)
         {
             NewGame();
         } 
         if(Input.GetKeyDown(KeyCode.Escape) && gameOver)
         {
-            NewGame();
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
         }
         if(Input.GetKeyDown(KeyCode.Space) && gameOver)
         {
@@ -112,12 +119,12 @@ public class DinoGameManager : MonoBehaviour
 
     void UpdateHighScore()
     {
-        float highScore = PlayerPrefs.GetFloat("HighScore", 0);
+        float highScore = PlayerPrefs.GetFloat("DinoHighScore", 0);
 
         if(score > highScore)
         {
             highScore = score;
-            PlayerPrefs.SetFloat("HighScore", highScore);
+            PlayerPrefs.SetFloat("DinoHighScore", highScore);
         }
         HighScoreText.text = Mathf.FloorToInt(highScore).ToString("D5");
     }

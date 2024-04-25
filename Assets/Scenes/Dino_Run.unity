@@ -1263,7 +1263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885888577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 3.6799998, z: 0}
+  m_LocalPosition: {x: 0.04, y: 3.6799998, z: -1}
   m_LocalScale: {x: 1.1149, y: 1.1149, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2389,8 +2389,8 @@ Transform:
   - {fileID: 1071003970}
   - {fileID: 1947615301}
   - {fileID: 885888578}
-  - {fileID: 774677756}
   - {fileID: 892799569}
+  - {fileID: 774677756}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2510,6 +2510,8 @@ MonoBehaviour:
   obstacles:
   - prefab: {fileID: 5343817938319992046, guid: e75a7ede16f8dbf49a27889a68364e8c, type: 3}
     spawnChance: 0.3
+  - prefab: {fileID: 8937837896026180929, guid: b336f405ccc23bb4a880f9b58f6e92ee, type: 3}
+    spawnChance: 0.2
   minSpawnRate: 1
   maxSpawnRate: 2
 --- !u!4 &2044592384
