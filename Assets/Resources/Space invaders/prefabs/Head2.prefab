@@ -53,6 +53,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5157933942171533899, guid: 13ed0bdb357a2184f9e77aa457a77c08, type: 3}
+      propertyPath: score
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157933942171533899, guid: 13ed0bdb357a2184f9e77aa457a77c08, type: 3}
       propertyPath: animationTIme
       value: 0.25
       objectReference: {fileID: 0}
@@ -71,6 +75,10 @@ PrefabInstance:
     - target: {fileID: 6189788099742680241, guid: 13ed0bdb357a2184f9e77aa457a77c08, type: 3}
       propertyPath: m_Name
       value: Head2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189788099742680241, guid: 13ed0bdb357a2184f9e77aa457a77c08, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6721385077904694042, guid: 13ed0bdb357a2184f9e77aa457a77c08, type: 3}
       propertyPath: m_Size.x

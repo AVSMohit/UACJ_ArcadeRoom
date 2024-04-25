@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
-        Time.fixedDeltaTime = default;
+        Time.fixedDeltaTime = 0.02f;
     }
     private void Update()
     {

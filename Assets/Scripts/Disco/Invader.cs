@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Invader : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class Invader : MonoBehaviour
     SpriteRenderer spriteRenderer;
 
     int animationFrame;
+
+    public System.Action killed;
+
+    public float score;
 
     private void Awake()
     {
@@ -31,5 +36,15 @@ public class Invader : MonoBehaviour
 
         spriteRenderer.sprite = animationSprite[animationFrame];
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Laser"))
+        {
+            this.gameObject.SetActive(false);
+            DiscoGameManager.instance.UpdateScore(score);
+            this.killed.Invoke();
+        }
     }
 }

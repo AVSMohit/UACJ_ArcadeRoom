@@ -20,10 +20,10 @@ TagManager:
   - Pellets
   - Obstacles
   - Node
-  - 
-  - 
-  - 
-  - 
+  - Laser
+  - DiscoPlayer
+  - Invader
+  - Missile
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Heads
     uniqueID: 560102867
+    locked: 0
+  - name: UI
+    uniqueID: 1627580451
     locked: 0

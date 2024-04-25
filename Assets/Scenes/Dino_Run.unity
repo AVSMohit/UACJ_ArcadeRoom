@@ -1155,7 +1155,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: b76489bab174ab5409cccf68bce12138, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d22d8737f2a1540459571bf1e31fecf3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1234,10 +1234,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: b76489bab174ab5409cccf68bce12138, type: 3}
-  - {fileID: 21300000, guid: 4cf03315a491e9749a0d9a0b5c4e7a80, type: 3}
-  - {fileID: 21300000, guid: df0d00850a771154faabeb593806bcec, type: 3}
-  - {fileID: 21300000, guid: 8f42f65e242aec545812914d17310078, type: 3}
+  - {fileID: 21300000, guid: d22d8737f2a1540459571bf1e31fecf3, type: 3}
+  - {fileID: 21300000, guid: 36a98075cdb46ab41bb40696e4770dbb, type: 3}
+  - {fileID: 21300000, guid: c882173380ea7ac428951db980e07f17, type: 3}
+  - {fileID: 21300000, guid: 2689c6b43949f9c43b2e994bb7f5a658, type: 3}
 --- !u!1 &885888577
 GameObject:
   m_ObjectHideFlags: 0
